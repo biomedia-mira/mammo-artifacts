@@ -1,6 +1,6 @@
 # Detection and effect of artifacts in breast mammography
 
-This repository contains the code associated with the paper "Radio-opaque artefacts in mammography: detection and downstream effects"
+This repository contains the code associated with the paper "Radio-opaque artefacts in digital mammography: Automatic detection and analysis of downstream effects".
 
 <img src="figure1.png" alt="figure1" width="95%"> 
 
@@ -14,14 +14,17 @@ It contains the following files:
 * `density_train.py` to train the density classification model
 * `dataset.py` defines dataset classes and pytorch lightining data modules for all training tasks. 
 
-The manually labelled artifact file can be found in `labelling_tools/manual_annotations_new.csv`. 
-The model predictions for all images in EMBED can be found in `predicted_all_embed.csv`
+## Artifact datasets
+The manually labelled artifact dataset file can be found in `labelling_tools/manual_annotations_new.csv`. 
+The model predictions from the artefact detector for all images in EMBED can be found in `predicted_all_embed.csv`
 
-All required pip depencies are listed in `requirements.txt`
+## Requirements
+All required pip depencies needed to run code in this project are listed in `requirements.txt`
 
 ## Train the artifact detector
-Simply run `python train_detector.py`
+Simply run `python train_detector.py` to train your own artefact detector.
 
 ## Train the downstream model (e.g. density)
-Simply run `python density_train.py`.
+Simply run `python density_train.py` to train a density classification model.
+
 To assess the model per artifact you can then run inference: `python density_inference.py` and analyse outputs with `density_evaluate_markers.ipynb`
