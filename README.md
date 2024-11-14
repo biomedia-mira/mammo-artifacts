@@ -1,6 +1,6 @@
 # Detection and effect of artifacts in breast mammography
 
-This repository contains the code associated with the paper "Radio-opaque artefacts in digital mammography: Automatic detection and analysis of downstream effects".
+This repository contains the code associated with the paper [Radio-opaque artefacts in digital mammography: Automatic detection and analysis of downstream effects](https://arxiv.org/abs/2410.03809v1).
 
 <img src="figure1.png" alt="figure1" width="95%"> 
 
