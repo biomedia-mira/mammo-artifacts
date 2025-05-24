@@ -1,6 +1,6 @@
 # Detection and effect of artifacts in breast mammography
 
-This repository contains the code associated with the paper [Radio-opaque artefacts in digital mammography: Automatic detection and analysis of downstream effects](https://arxiv.org/abs/2410.03809v1).
+This repository contains the code associated with the paper [Radio-opaque artefacts in digital mammography: Automatic detection and analysis of downstream effects](https://arxiv.org/abs/2410.03809v1), presented at ISBI 2025.
 
 <img src="figure1.png" alt="figure1" width="95%"> 
 
@@ -13,6 +13,18 @@ It contains the following files:
 * `cancer_train.py` to train the screening outcome / lesion detection prediction model
 * `density_train.py` to train the density classification model
 * `dataset.py` defines dataset classes and pytorch lightining data modules for all training tasks. 
+
+Paper reference:
+```
+@inproceedings{schueppert2025radio,
+  title={Radio-opaque artefacts in digital mammography: automatic detection and analysis of downstream effects},
+  author={Schueppert, Amelia and Glocker, Ben and Roschewitz, M{\'e}lanie},
+  booktitle={2025 IEEE 22nd International Symposium on Biomedical Imaging (ISBI)},
+  pages={1--5},
+  year={2025},
+  organization={IEEE}
+}
+```
 
 ## Artifact datasets
 The manually labelled artifact dataset file can be found in `labelling_tools/manual_annotations_new.csv`. 
